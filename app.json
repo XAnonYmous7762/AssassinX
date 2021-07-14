@@ -33,11 +33,11 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "1413280026"
+         "value": "1725860085"
       },
       "OWNER_NAME": {
          "description": "Your username",
-         "value": "Papa_oo_papa"
+         "value": "ItzMe_Anon"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
@@ -46,7 +46,7 @@
       },
 "GRAND_IMG": {
          "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/7a948e5e451676e5279ff.jpg"    
+         "value": "https://telegra.ph/file/90d1600f7e18c0abf9787.jpg"    
       },
       "GBAN_LOGS": {
          "description": "Gban log channel, include the hyphen too: ex: -123456",
@@ -105,7 +105,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1413280026"
+         "value": "1896287605"
       }
    },
    "keywords": [
@@ -114,7 +114,7 @@
       "manager",
       "bot"
    ],
-   "logo": "https://telegra.ph/file/7a948e5e451676e5279ff.jpg",
-   "name": "❤ PIKACHU ❤",
-   "repository": "https://github.com/LEGEND-Xxxxx/Pikachu-lava-bot"
+   "logo": "https://telegra.ph/file/5559e5fe7760f980407b5.jpg",
+   "name": "𝗔𝘀𝘀𝗮𝘀𝘀𝗶𝗻 𝗫",
+   "repository": "https://github.com/XAnonYmous7762/AssassinX"
 }
