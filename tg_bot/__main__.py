@@ -34,7 +34,7 @@ You can find my list of available commands with /help.
 
 HELP_STRINGS = """
 
-Hey there! My name is Pικαϲнυ.
+Hey there! My name is Assassin X.
 
 -> I am a pro group management bot, here to help you get around and keep the order in your groups!
 -> I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
@@ -45,7 +45,7 @@ Here is modules:
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/7a948e5e451676e5279ff.jpg"
+TECHNO_IMG = "https://telegra.ph/file/90d1600f7e18c0abf9787.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -138,15 +138,15 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒",
                                                                        callback_data="help_back".format(bot.username)),
                                                                                    InlineKeyboardButton(text="𝐌𝐘 𝐌𝐀𝐒𝐓𝐄𝐑",
-                                                                       url="t.me/PAPA_OO_PAPA")],
+                                                                       url="t.me/ItzMe_Anon")],
                                                                                    [InlineKeyboardButton(text="𝐀𝐃𝐃 𝐌𝐄",
-                                                                       url="t.me/PIKACHU_LAVA_BOT?startgroup=true".format(bot.username)),
+                                                                       url="t.me/AssassinxBot?startgroup=true".format(bot.username)),
                                                                                    InlineKeyboardButton(text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒",
-                                                                       url="t.me/PIKACHUBOTUPDATES")
+                                                                       url="t.me/OfficialAssassinX")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Yuss, I am Already ONline")
+        update.effective_message.reply_text("Yeah,Boss i am on fire")
 
 
 def send_start(bot, update):
@@ -248,7 +248,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in Direct Message to get the help.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="HELP",
-                                                                       url="t.me/PIKACHU_LAVA_BOT?start=help".format(
+                                                                       url="t.me/AssassinxBot?start=help".format(
                                                                            bot.username))]]))
         return
 
@@ -433,7 +433,7 @@ def get_settings(bot: Bot, update: Update):
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
                                [[InlineKeyboardButton(text="Settings",
-                                                      url="t.me/PIKACHU_LAVA_BOT?start=stngs_{}".format(
+                                                      url="t.me/AssassinxBot?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
             text = "Click here to check your settings."
