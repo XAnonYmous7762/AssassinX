@@ -1,5 +1,5 @@
 future
-LEGENDX
+Anon
 emoji
 beautifulsoup4
 requests
