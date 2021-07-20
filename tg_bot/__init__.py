@@ -67,7 +67,7 @@ if ENV:
     URL = os.environ.get('URL', "")  # Does not contain token
     PORT = int(os.environ.get('PORT', 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
     DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
@@ -128,7 +128,7 @@ else:
     URL = Config.URL
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
-
+    MONGO_DB_URI = Config.MONGO_DB_URI
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
     LOAD = Config.LOAD
