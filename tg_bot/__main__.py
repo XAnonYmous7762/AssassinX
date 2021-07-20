@@ -146,7 +146,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Yeah,Boss i am on fire")
+        update.effective_message.reply_text("Heya :) PM me if you have any questions on how to use me!")
 
 
 def send_start(bot, update):
