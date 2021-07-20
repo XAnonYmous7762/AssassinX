@@ -38,7 +38,7 @@
       "MONGO_DB_URI": {
          "description": "Your mongodb",
          "value": "",
-         "required": false 
+         "required": true
       },
       "OWNER_NAME": {
          "description": "Your username",
