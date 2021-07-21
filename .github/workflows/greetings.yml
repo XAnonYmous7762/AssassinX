@@ -46,5 +46,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Hi, welcome to phantomRobot and its repo, as this is your first issuse here we suggest you visit us on telegrm @AnonymousD3061 for faster resolutions and urgent reports'
+        issue-message: 'Hi, welcome to Assassin X and its repo, as this is your first issuse here we suggest you visit us on telegrm @ItzMe_Anon for faster resolutions and urgent reports'
         pr-message: 'Hi, welcome to your first PR here, we will catch up with you shortly.'
