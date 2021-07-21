@@ -4,11 +4,11 @@ import sys
 import time
 import telegram.ext as tg
 try:
-  os.system("pip install -U LEGENDX")
-  from LEGENDX import id
+  os.system("pip install -U ANON")
+  from ANON import id
 except:
-  os.system("pip install LEGENDX")
-  from LEGENDX import id
+  os.system("pip install ANON")
+  from ANON import id
 StartTime = time.time()
 
 # enable logging
