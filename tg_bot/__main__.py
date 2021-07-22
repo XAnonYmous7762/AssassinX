@@ -26,9 +26,16 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-✨Hey {}, I am {}
-Im an Anime themed + Super Group Management Bot, feel free to add me to your groups!
-You can find my list of available commands with /help.
+✨
+hello {}, I am {}
+
+this is the most complete bot to help you manage your groups easily and safely!
+
+And add me in a super group and promote me as admin to set me get in action!
+
+WHAT ARE THE COMMANDS
+
+Press /help to see all the commands and how they work!
 
 """
 
@@ -135,13 +142,13 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 TECHNO_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Commands",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="𝐌𝐘 𝐌𝐀𝐒𝐓𝐄𝐑",
+                                                                                   InlineKeyboardButton(text="My Master",
                                                                        url="t.me/ItzMe_Anon")],
-                                                                                   [InlineKeyboardButton(text="𝐀𝐃𝐃 𝐌𝐄",
+                                                                                   [InlineKeyboardButton(text="Add Me",
                                                                        url="t.me/AssassinxBot?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒",
+                                                                                   InlineKeyboardButton(text="Assassin X Updates",
                                                                        url="t.me/OfficialAssassinX")
                                                                                  ]]))
 
