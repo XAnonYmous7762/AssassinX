@@ -3,12 +3,10 @@ import os
 import sys
 import time
 import telegram.ext as tg
-try:
-  os.system("pip install -U LEGNDX")
-  from LEDENDX import id
-except:
-  os.system("pip install LEGENDX")
-  from LEGNDX import id
+from pyrogram import Client, errors
+
+from telethon import TelegramClient 
+
 StartTime = time.time()
 
 # enable logging
