@@ -3,9 +3,7 @@ import os
 import sys
 import time
 import telegram.ext as tg
-from pyrogram import Client, errors
 
-from telethon import TelegramClient 
 
 StartTime = time.time()
 
