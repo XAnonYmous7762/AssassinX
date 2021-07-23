@@ -37,7 +37,7 @@ class Config(object):
     STRICT_GBAN = True
     STRICT_GMUTE = True
     WORKERS = 8  # Number of subthreads to use. Set as number of threads your processor uses
-    BAN_STICKER = 'CAADAgADOwADPPEcAXkko5EB3YGYAg'  # banhammer marie sticker
+    BAN_STICKER = None  # banhammer marie sticker
     ALLOW_EXCL = False  # Allow ! commands as well as /
     CASH_API_KEY = None # Get one from https://www.alphavantage.co/support/#api-key
     TIME_API_KEY = None # Get one from https://timezonedb.com/register
