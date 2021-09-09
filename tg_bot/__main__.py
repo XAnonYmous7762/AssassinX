@@ -26,22 +26,21 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-✨
 hello {}, I am {}
 
 this is the most complete bot to help you manage your groups easily and safely!
 
-And add me in a super group and promote me as admin to set me get in action!
+i can help admins by managing their groups! Have a look at the following for an idea of some of \
 
-WHAT ARE THE COMMANDS
+the things I can help you with.
 
-Press /help to see all the commands and how they work!
+*Main* commands available:
 
 """
 
 HELP_STRINGS = """
 
-Hey there! My name is Assassin X.
+Hey there! My name is Phoenix.
 
 -> I am a pro group management bot, here to help you get around and keep the order in your groups!
 -> I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
@@ -52,7 +51,7 @@ Here is modules:
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/90d1600f7e18c0abf9787.jpg"
+TECHNO_IMG = "https://telegra.ph/file/38163edb222d4545e539d.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -145,11 +144,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Commands",
                                                                        callback_data="help_back".format(bot.username)),
                                                                                    InlineKeyboardButton(text="My Master",
-                                                                       url="t.me/ItzMe_Anon")],
+                                                                       url="t.me/heyaaman")],
                                                                                    [InlineKeyboardButton(text="Add Me",
-                                                                       url="t.me/AssassinxBot?startgroup=true".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="Assassin X Updates",
-                                                                       url="t.me/OfficialAssassinX")
+                                                                       url="t.me/PhoenixWarmedbot?startgroup=true".format(bot.username)),
+                                                                                   InlineKeyboardButton(text="Phoenix Updates",
+                                                                       url="t.me/phoenix_empire")
                                                                                  ]]))
 
     else:
@@ -255,7 +254,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in Direct Message to get the help.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="HELP",
-                                                                       url="t.me/AssassinxBot?start=help".format(
+                                                                       url="t.me/PhoenixWarmedbot?start=help".format(
                                                                            bot.username))]]))
         return
 
@@ -440,7 +439,7 @@ def get_settings(bot: Bot, update: Update):
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
                                [[InlineKeyboardButton(text="Settings",
-                                                      url="t.me/AssassinxBot?start=stngs_{}".format(
+                                                      url="t.me/PhoenixWarmedbot?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
             text = "Click here to check your settings."
